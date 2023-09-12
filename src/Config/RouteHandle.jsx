@@ -36,6 +36,7 @@ import InstructorDashBoard from '../Component/InstructorComponents/InstructorDas
 import DashBoard from '../Pages/DashBoard/DashBoard';
 import Test from '../Test';
 import InstructorPage from '../Pages/InstructorPage/InstructorPage';
+import CurrentElections from '../Component/CurrentElections/CurrentElections';
 
 
 const RouteHandle = () => {
@@ -51,6 +52,10 @@ const RouteHandle = () => {
         {
           path: "/",
           element: <HomePage setTitle={setTitle} />,
+        },
+        {
+          path: "/ongoing",
+          element: <CurrentElections></CurrentElections>,
         },
         {
           path: "/dashboard",

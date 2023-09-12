@@ -13,9 +13,9 @@ const Layout = () => {
     return (
         <>
       {match?<>
-      <Slider>
+    
         <Header/>
-      </Slider>
+    
       </>:<>
       <Header/></>}
      

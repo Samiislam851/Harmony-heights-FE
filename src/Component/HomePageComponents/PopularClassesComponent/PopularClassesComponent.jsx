@@ -5,6 +5,7 @@ import Spinner from '../../Spinner/Spinner';
 import ClassCard from '../../../Pages/ClassesListPage/ClassCard';
 import { AuthContext } from '../../../Provider/AuthContextProvider';
 import { useContext } from 'react';
+import { useSpring , animated } from 'react-spring';
 
 
 const PopularClassesComponent = () => {
@@ -20,11 +21,60 @@ const PopularClassesComponent = () => {
   }, []);
   const darkText = 'text-gray-700';
   const lightText = 'text-gray-200'
+
+  const [scrollY, setScrollY] = useState(0);
+
+  // Update scrollY on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const maxScroll = documentHeight - windowHeight;
+      const percentage = (scrollY / maxScroll) * 100;
+      setScrollY(window.scrollY);
+      console.log(scrollY);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  console.log(scrollY);
+  const spring = useSpring({
+    from: { opacity: 0, transform: 'translateY(500px)' },
+    to: { opacity: 1, transform: 'translateY(0px)' },
+    config: { tension: 200, friction: 80 },
+    delay: 100,
+    reverse: scrollY < 500,
+  });
+  const spring2 = useSpring({
+    from: { opacity: 0, transform: 'translateY(500px)' },
+    to: { opacity: 1, transform: 'translateY(0px)' },
+    config: { tension: 180, friction: 80 },
+    delay: 100,
+    reverse: scrollY < 500,
+  });
+  const spring3 = useSpring({
+    from: { opacity: 0, transform: 'translateY(500px)' },
+    to: { opacity: 1, transform: 'translateY(0px)' },
+    config: { tension: 160, friction: 80 },
+    delay: 100,
+    reverse: scrollY < 500,
+  });
+
   return (
     <>
-      <div class="bg-transparent">
-        <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-          <p className={`${dark?lightText:darkText} text-6xl  text-center  font-thin  mt-20 mb-20`}>Our Popular Classes</p>
+     <animated.div style={spring}>
+      <div class="bg-[#F6F7FA] md:pb-20">
+        <div class="mx-auto md:max-w-[1600px]  py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+         
+          <p className={`${dark?lightText:darkText} md:text-6xl text-4xl text-center  font-semibold text-gray-800 mt-20 mb-7`}>Our Popular Classes</p>
+         
+          <animated.div style={spring2}>
+          <p className='md:w-[50%] w-[90%] md:text-lg text-gray-500 mx-auto text-center mb-16'>Join us to discover the most sought-after courses that cater to all skill levels. Dive into a world of creativity and knowledge as you embark on your learning journey with our popular classes.</p>
+          </animated.div>
+          <animated.div style={spring3}>
           <div class="mt-8 grid grid-cols-1  sm:grid-cols-2 gap-6 lg:grid-cols-3 xl:gap-x-6">
             {loading ? <>
               <Spinner />
@@ -41,8 +91,10 @@ const PopularClassesComponent = () => {
 
 
           </div>
+          </animated.div>
         </div>
       </div>
+      </animated.div>
     </>
   );
 }

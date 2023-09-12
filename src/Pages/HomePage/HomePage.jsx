@@ -6,6 +6,11 @@ import PopularClassesComponent from '../../Component/HomePageComponents/PopularC
 import PopularInstructor from '../../Component/PopularInstructor/PopularInstructor';
 import Contact from '../../Component/Contact/Contact';
 import CourseSection from '../../Component/HomePageComponents/CourseSelection';
+import Slider from '../../Layout/Slider/Slider';
+import MusicGroups from '../../Component/MusicGroups/MusicGroups';
+import LetsMakeArt from '../../Component/LetsMakeArt/LetsMakeArt';
+import NextEvent from '../../Component/NextEvent/NextEvent';
+import FeedBack from '../../Component/FeedBack/FeedBack';
 
 
 
@@ -30,23 +35,18 @@ const HomePage = ({ setTitle }) => {
 
 
     <>
+      <div className=''>
+        <Slider />
+        <PopularClassesComponent />
+        <MusicGroups />
+        <PopularInstructor />
+       <LetsMakeArt/>
+       <NextEvent/>
+       <FeedBack/>
+        <CourseSection></CourseSection>
 
-      <PopularClassesComponent />
-      <PopularInstructor />
-      <div className="container max-w-7xl mx-auto px-4 mt-12">
-        <div className="flex flex-wrap">
-
-        </div> </div>
-      <CourseSection></CourseSection>
-
-
-
-      <div className='grid grid-cols-3 py-10 md:py-20 gap-6'>
-
-
+        <Contact></Contact>
       </div>
-
-      <Contact></Contact>
     </>
 
 
