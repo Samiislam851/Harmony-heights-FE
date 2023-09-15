@@ -37,6 +37,7 @@ import DashBoard from '../Pages/DashBoard/DashBoard';
 import Test from '../Test';
 import InstructorPage from '../Pages/InstructorPage/InstructorPage';
 import CurrentElections from '../Component/CurrentElections/CurrentElections';
+import BlogPage from '../Pages/BlogPage/BlogPage';
 
 
 const RouteHandle = () => {
@@ -69,6 +70,10 @@ const RouteHandle = () => {
         {
           path: "/classes",
           element: <ClassesListPage setTitle={setTitle} />,
+        },
+        {
+          path: "/blogs",
+          element: <BlogPage setTitle={setTitle} />,
         },
 
 

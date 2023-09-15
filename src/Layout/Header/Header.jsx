@@ -15,11 +15,11 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [dropDownOpen, setDropDownOpen] = useState(false);
   const [imgDetails, setImgDetails] = useState(false)
-  const  { registerUser, user, logOut, loginUser,isLogged,setIsLogged , isAdmin, isInstructor, loading,userData, setUserData, theme, dark,handleToggle }  = useContext(AuthContext);
- 
+  const { registerUser, user, logOut, loginUser, isLogged, setIsLogged, isAdmin, isInstructor, loading, userData, setUserData, theme, dark, handleToggle } = useContext(AuthContext);
+
   // const { registerUser, user, logOut, loginUser, isLogged, setIsLogged, ,} = useContext(AuthContext);
-console.log("Dark :",dark);
-console.log("Theme",theme);
+  console.log("Dark :", dark);
+  console.log("Theme", theme);
 
   const [open, setOpen] = React.useState(false);
 
@@ -57,7 +57,7 @@ console.log("Theme",theme);
         theme="light"
       />
       {/* This example requires Tailwind CSS v2.0+ */}
-      <div className={`relative ${dark?'bg-gray-900':'bg-white'} z-[1000]`}>
+      <div className={`relative ${dark ? 'bg-gray-900' : 'bg-white'} z-[1000]`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center   border-gray-100 py-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -111,19 +111,25 @@ console.log("Theme",theme);
               >
                 Classes
               </ActiveLink>
+              <ActiveLink
+                to="/blogs"
+                className="text-base font-medium text-gray-500 "
+              >
+                Blogs
+              </ActiveLink>
 
 
 
 
               {user ? <ActiveLink
-             to={!loading && (isAdmin ? '/admin' : (isInstructor ? '/instructor' : '/student'))}
+                to={!loading && (isAdmin ? '/admin' : (isInstructor ? '/instructor' : '/student'))}
                 className="text-base font-medium text-gray-500 "
               >
-               Dashboard
+                Dashboard
               </ActiveLink> : <></>}
-      
 
-        
+
+
 
 
               <label className="hidden swap swap-rotate">
@@ -231,24 +237,31 @@ console.log("Theme",theme);
                   >
                     Instructors
                   </ActiveLink>
+                  <ActiveLink
+                    to="/classes"
+                    className="text-base font-medium text-gray-500 "
+                  >
+                    Classes
+                  </ActiveLink>
+                  <ActiveLink
+                    to="/blogs"
+                    className="text-base font-medium text-gray-500 "
+                  >
+                    Blogs
+                  </ActiveLink>
 
 
 
 
                   {user ? <ActiveLink
-                   to={!loading && (isAdmin ? '/admin' : (isInstructor ? '/instructor' : '/student'))}
+                    to={!loading && (isAdmin ? '/admin' : (isInstructor ? '/instructor' : '/student'))}
                     className="text-base font-medium text-gray-500 "
                   >
-                   Dashboard
+                    Dashboard
                   </ActiveLink> : <></>}
-              
 
-                  <ActiveLink
-                    to="/blog"
-                    className="text-base font-medium text-gray-500 "
-                  >
-                    Blogs
-                  </ActiveLink>
+
+
                   <label className="swap swap-rotate hidden">
 
                     {/* this hidden checkbox controls the state */}

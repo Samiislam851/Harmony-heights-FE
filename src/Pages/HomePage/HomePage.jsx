@@ -11,6 +11,7 @@ import MusicGroups from '../../Component/MusicGroups/MusicGroups';
 import LetsMakeArt from '../../Component/LetsMakeArt/LetsMakeArt';
 import NextEvent from '../../Component/NextEvent/NextEvent';
 import FeedBack from '../../Component/FeedBack/FeedBack';
+import NumbersCount from '../../Component/NumbersCount/NumbersCount';
 
 
 
@@ -40,9 +41,11 @@ const HomePage = ({ setTitle }) => {
         <PopularClassesComponent />
         <MusicGroups />
         <PopularInstructor />
-       <LetsMakeArt/>
-       <NextEvent/>
-       <FeedBack/>
+      
+        <LetsMakeArt />
+        <NextEvent />
+        <FeedBack />
+        <NumbersCount/>
         <CourseSection></CourseSection>
 
         <Contact></Contact>
