@@ -21,6 +21,9 @@
 .image-container:hover div .links {
     bottom: 20px;
 }
+.image-container:hover div .details {
+    /* bottom: -13px; */
+}
 
 .feedback{
    
