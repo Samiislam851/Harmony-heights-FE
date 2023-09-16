@@ -84,7 +84,7 @@ const SingleBlogPage = ({ setTitle }) => {
                                     <p className="text-gray-500 text-2xl pe-10">- Conor' Mc George</p>
                                 </div>
                             </div>
-                            <div className='flex justify-between items-center'>
+                            <div className='flex justify-between items-center pt-6'>
                                 <button className='btn bg-[#55B4AD] hover:bg-[#4ca19c] text-lg font-medium text-white'>Share</button>
                                 <div className='flex gap-3'>
                                     <AiFillFacebook className='hover:text-[#55B4AD] hover:scale-125 transition-all ease-in-out duration-300 text-3xl text-[#339c82] hover:cursor-pointer' />
@@ -94,7 +94,7 @@ const SingleBlogPage = ({ setTitle }) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='md:basis-[35%] '>
+                        <div className='md:basis-[35%] pt-20 md:pt-0 '>
                             <div class="flex items-center justify-center shadow  px-10 py-5">
                                 <input
                                     type="text"

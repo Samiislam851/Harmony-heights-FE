@@ -12,6 +12,7 @@ import LetsMakeArt from '../../Component/LetsMakeArt/LetsMakeArt';
 import NextEvent from '../../Component/NextEvent/NextEvent';
 import FeedBack from '../../Component/FeedBack/FeedBack';
 import NumbersCount from '../../Component/NumbersCount/NumbersCount';
+import BlogsComponen from '../../Component/BlogsComponent/BlogsComponen';
 
 
 
@@ -47,7 +48,7 @@ const HomePage = ({ setTitle }) => {
         <FeedBack />
         <NumbersCount/>
         <CourseSection></CourseSection>
-
+<BlogsComponen/>
         <Contact></Contact>
       </div>
     </>
