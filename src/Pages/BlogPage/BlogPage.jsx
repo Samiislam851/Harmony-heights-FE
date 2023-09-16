@@ -37,14 +37,18 @@ const BlogPage = ({setTitle}) => {
         <>
      
 
-            <div ref={ref} className="max-w-[1600px] mx-auto px-5  md:px-12 relative mt-20 mb-40 ">
+            <div ref={ref} className="max-w-[1600px] mx-auto px-5  md:px-12 relative  mb-40 ">
    
 
  {loading?<>
   <Spinner/>
  </>: <>
- <h2 className='md:text-6xl text-4xl text-gray-700 text-center font-semibold pb-8'>Our Featured Blogsgit </h2>
+ <div className="">
+ <div className="   pb-20 pt-32 ">
+ <h2 className='md:text-6xl text-4xl text-gray-700 text-center font-semibold pb-8'>Our Featured Blogs </h2>
  <p className='md:text-xl text-lg text-gray-400 text-center md:w-[80%] w-[95%] mx-auto pb-20'>Explore the harmonious world of music through our featured blogs. Dive into the vibrant tapestry of musical genres, techniques, and inspiration that our music school has to offer.</p>
+ </div>
+ </div>
 <div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
  {blogData.map(e=><BlogsCard data={e}/>  )}
  </div>
@@ -65,6 +69,7 @@ const BlogPage = ({setTitle}) => {
         }
       </Pdf> */}
   </div>
+
 </>
 
        

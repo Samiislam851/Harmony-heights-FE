@@ -38,6 +38,7 @@ import Test from '../Test';
 import InstructorPage from '../Pages/InstructorPage/InstructorPage';
 import CurrentElections from '../Component/CurrentElections/CurrentElections';
 import BlogPage from '../Pages/BlogPage/BlogPage';
+import SingleBlogPage from '../Pages/SingleBlogPage/SingleBlogPage';
 
 
 const RouteHandle = () => {
@@ -75,7 +76,11 @@ const RouteHandle = () => {
           path: "/blogs",
           element: <BlogPage setTitle={setTitle} />,
         },
-
+       
+        {
+          path: "/blogs/blog/:blogId",
+          element: <SingleBlogPage setTitle={setTitle} />,
+        },
 
         {
           path: "/login",
