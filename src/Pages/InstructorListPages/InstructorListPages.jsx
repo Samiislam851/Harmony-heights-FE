@@ -40,8 +40,9 @@ const InstructorListPages = ({setTitle }) => {
 
 
 <div class="bg-white">
-  <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-    <h2 class="md:text-6xl text-center pb-20 font-semibold text-gray-600">Instructor List</h2>
+  <div class="mx-auto md:max-w-[1600px]  py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+    <h2 class="md:text-6xl text-center pb-5 font-semibold text-gray-600">Instructor List</h2>
+    <p className='md:w-[70%] w-[90%] mx-auto text-base text-gray-400 md:text-lg text-gray-1500 text-center pb-16'>Our renowned team of instructors brings expertise, passion, and a commitment to excellence to every class they lead. Get to know the talented educators behind our popular courses and embark on a learning experience guided by the best in the field.</p>
     <div class="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
     {loading ? <>
                 <Spinner />
