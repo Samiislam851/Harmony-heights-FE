@@ -67,20 +67,20 @@ https://harmonyheights.netlify.app/
 ## Role Based Access Controls
 
 #### Admin Features : 
-Admins can Approve classes that are requested from the Instructors.
+- Admins can Approve classes that are requested from the Instructors.
 
-Can update the role of a student or teacher 
+- Can update the role of a student or teacher 
 
 #### Instructor Role Features : 
-Instructors can add classes which will later be displayed in the dashboard of admin until he/she approves it.
+- Instructors can add classes which will later be displayed in the dashboard of admin until he/she approves it.
 
-Instructors can set the maximum number of students that can enroll.
+- Instructors can set the maximum number of students that can enroll.
 
 
 
 #### Student Role Features : 
-Students can enroll as many classes as they want to. 
+- Students can enroll as many classes as they want to. 
 
-They will be redirected to the payment method while enrolling.
+- They will be redirected to the payment method while enrolling.
 
-Any user including Admin, Instructors, Students can see the How many students have enrolled and how many seats are left.
+- Any user including Admin, Instructors, Students can see the How many students have enrolled and how many seats are left.
