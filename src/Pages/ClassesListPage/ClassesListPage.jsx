@@ -87,8 +87,9 @@ const navigate = useNavigate()
     <>
 
 <div class="bg-transparent">
-  <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-    <h2 class="text-xl font-bold text-gray-900">Classes List</h2>
+  <div class="mx-auto md:max-w-[1600px]  py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+  <h2 class="md:text-6xl text-center pb-5 font-semibold text-gray-600">Classes List</h2>
+    <p className='md:w-[70%] w-[90%] mx-auto text-base text-gray-400 md:text-lg text-gray-1500 text-center pb-16'>Join us to discover the most sought-after courses that cater to all skill levels. Dive into a world of creativity and knowledge as you embark on your learning journey with our popular classes.</p>
     <div class="mt-8 grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-2">
     {loading ? <>
                 <Spinner />
