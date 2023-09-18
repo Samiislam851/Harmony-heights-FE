@@ -104,25 +104,21 @@ after enrolement student can see the class in the enrolled List
 
 ![student](https://i.ibb.co/9r2wjtq/Student-Dashboard-3.png)
 
-<div style="display: flex;">
+### Admin Dashboard 
 
-![Admin Dashboard 1](https://i.ibb.co/Czqhy2c/Admin-Dashboard-1.png)
+![Admin](https://i.ibb.co/Czqhy2c/Admin-Dashboard-1.png)
 
-![Admin Dashboard 2](https://i.ibb.co/jz8GPgR/Admin-Dashboard-2.png)
+![Admin](https://i.ibb.co/jz8GPgR/Admin-Dashboard-2.png)
 
-![Admin Dashboard 3](https://i.ibb.co/HTDXVFR/Admin-Dashboard-3.png)
+![Admin](https://i.ibb.co/HTDXVFR/Admin-Dashboard-3.png)
 
-</div>
+### Instructor Dashboard 
 
-<div style="display: flex;">
+![Instructor](https://i.ibb.co/k81qFrs/Instructor-Dashboard-1.png)
 
-![Instructor Dashboard 1](https://i.ibb.co/k81qFrs/Instructor-Dashboard-1.png)
+![Instructor](https://i.ibb.co/wJMPddf/Instructor-Dashboard-2.png)
 
-![Instructor Dashboard 2](https://i.ibb.co/wJMPddf/Instructor-Dashboard-2.png)
-
-![Instructor Dashboard 3](https://i.ibb.co/cbx2R56/Instructor-Dashboard-3.png)
-
-</div>
+![Instructor](https://i.ibb.co/cbx2R56/Instructor-Dashboard-3.png)
 
 
 
