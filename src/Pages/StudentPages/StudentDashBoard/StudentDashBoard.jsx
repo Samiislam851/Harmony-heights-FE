@@ -3,7 +3,7 @@ import React from 'react';
 const StudentDashBoard = () => {
     return (
         <>
-            sds
+             <div className='text-7xl text-gray-500 text-center pt-40 font-semibold'>Welcome To Your Dashboard</div>
         </>
     );
 }

@@ -38,7 +38,7 @@ theme="light"
                 </div>
                 <div className="px-6 py-6 text-white">
                   <Link
-                    to="/admin"
+                    to="/instructor"
                     className="router-link-exact-active router-link-active"
                   >
                   Dashboard

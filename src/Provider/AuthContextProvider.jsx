@@ -33,14 +33,15 @@ const AuthContextProvider = ({ children }) => {
   };
   useEffect(() => {
     localStorage.setItem("theme", theme);
-    const localTheme = localStorage.getItem("theme");
+    // const localTheme = localStorage.getItem("theme");
+    const localTheme = "light";
     document.querySelector("html").setAttribute("data-theme", localTheme);
   }, [theme]);
   
   const handleToggle = (event) => {
     if (event.target.checked) {
-      setTheme("dark");
-      setDark(true)
+      setTheme("light");
+      setDark(false)
     } else {
       setTheme("light");
       setDark(false);
@@ -49,7 +50,7 @@ const AuthContextProvider = ({ children }) => {
 
   useEffect(() => {
     if (theme == "dark") {
-      setDark(true);
+      setDark(false);
       console.log('setting dark ', dark);
     }
     else {

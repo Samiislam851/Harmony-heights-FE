@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
- 
+ import Footer from '../../../src/Layout/Footer/Footer.jsx'
 
 import LoginWithGoogle from '../../Component/LoginWithSocial/LoginWithGoogle';
 import LoginWithGithub from '../../Component/LoginWithSocial/LoginWithGithub';
@@ -46,7 +46,7 @@ const LoginPage = ({setTitle}) => {
       <section className=" w-full    flex justify-center items-center px-4 md:px-0 mt-12">
   <div className="flex flex-col gap-5">
     <div className="flex gap-5 text-2xl font-semibold items-center">
-      <Link to="/login" className="border-b-4 border-[#4406CB] py-2">Login</Link>
+      <Link to="/login" className="border-b-4 border-[#59C6BC] py-2">Login</Link>
       <Link  to="/register" className="py-2 text-gray-500">Register Now</Link>
     </div>
     <form onSubmit={handleSubmit} className="flex flex-col gap-5 ">
@@ -67,7 +67,7 @@ const LoginPage = ({setTitle}) => {
         className="p-2 rounded-lg text-black border"
       />
       <p className='text-red-600'> {message}</p>
-      <button className="btn btn-primary">Login</button>
+      <button className="btn btn-primary text-lg text-white border-0 bg-[#59C6BC] hover:bg-[#3f8c84]">Login</button>
       <a href="#">Forgot Password?</a>
       <a href="#">If you've no account <Link to="/register" className='text-blue-800'>Create One</Link> </a>
     </form>

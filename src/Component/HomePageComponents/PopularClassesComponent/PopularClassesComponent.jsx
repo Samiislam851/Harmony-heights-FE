@@ -63,6 +63,31 @@ const PopularClassesComponent = () => {
     reverse: scrollY < 500,
   });
 
+// select class handler
+const selectClassHandler = (e) => {
+  if (user) {
+    let data = {
+      classid: e,
+      email: user.email,
+      enrolled: false
+    }
+    axios.post("/select/class/", data)
+      .then(response => {
+        console.log(response.data)
+        if (response.data.message == 'exist') {
+          toastPush("User Already Select this class")
+        } else {
+          toastPush("You've Selected Class")
+        }
+
+      })
+  }else{
+    toastPush("Login to select Class")
+    navigate("/login")
+  }
+}
+
+
   return (
     <>
      <animated.div style={spring}>
@@ -81,7 +106,7 @@ const PopularClassesComponent = () => {
             </> : <>
               {popularClassesData.map(e => {
                 return <>
-                  <PopularClassesCard data={e} />
+                  <PopularClassesCard data={e} selectClassHandler={selectClassHandler}/>
                 </>
               })}
             </>}

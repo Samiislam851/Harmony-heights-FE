@@ -84,12 +84,12 @@ createUserWithEmailAndPassword(auth, email, password)
     }
     return (
         <>
-        <Header/>
+    
            <section className=" w-full   flex justify-center items-center px-4 md:px-0 mt-12">
   <div className="flex flex-col gap-5">
     <div className="flex gap-5 text-2xl font-semibold items-center">
     <Link to="/login"  className="py-2 text-gray-500">Login </Link>
-    <Link  to="/register"  className="py-2  border-b-4 border-[#4406CB]  ">Register Now</Link>
+    <Link  to="/register"  className="py-2  border-b-4 border-[#59C6BC]  ">Register Now</Link>
     </div>
   
 
@@ -132,9 +132,9 @@ createUserWithEmailAndPassword(auth, email, password)
         className="p-2 rounded-lg text-black border" required
       />
       <p className='text-red-700'>{message}</p>
-      <button type="submit" className="btn btn-primary">Register</button>
+      <button type="submit" className="btn btn-primary  text-white text-lg border-0 bg-[#59C6BC] hover:bg-[#3f8c84]">Register</button>
       <a href="#">Forgot Password?</a>
-      <a href="#">Already have an account ? <Link to="/login" className='text-blue-800'>Login</Link> </a>
+      <a href="#">Already have an account ? <Link to="/login" className='text-white'>Login</Link> </a>
     </form>
     <div className="grid grid-cols-2 gap-4 text-black text-[10px] md:text-sm">
    {/* <LoginWithFacebook/>

@@ -87,6 +87,10 @@ const RouteHandle = () => {
           element: <RestictedPublicRoute> <LoginPage setTitle={setTitle} /></RestictedPublicRoute>,
         },
         {
+          path: "/register",
+          element: <RestictedPublicRoute> <RegisterPage setTitle={setTitle} /></RestictedPublicRoute>,
+        },
+        {
           path: "/admin",
           element: <AdminRoute> <AdminDashBoardLayout setTitle={setTitle} /></AdminRoute>,
           children: [
@@ -163,10 +167,7 @@ const RouteHandle = () => {
 
 
 
-    , {
-      path: "/register",
-      element: <RestictedPublicRoute> <RegisterPage setTitle={setTitle} /></RestictedPublicRoute>,
-    }
+    
     , {
       path: "/test",
       element: <Test />
