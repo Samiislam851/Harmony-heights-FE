@@ -39,6 +39,7 @@ import InstructorPage from '../Pages/InstructorPage/InstructorPage';
 import CurrentElections from '../Component/CurrentElections/CurrentElections';
 import BlogPage from '../Pages/BlogPage/BlogPage';
 import SingleBlogPage from '../Pages/SingleBlogPage/SingleBlogPage';
+import SingleBlog from '../Component/SingleBlog/SingleBlog';
 
 
 const RouteHandle = () => {
@@ -75,11 +76,18 @@ const RouteHandle = () => {
         {
           path: "/blogs",
           element: <BlogPage setTitle={setTitle} />,
+
         },
-       
+
         {
-          path: "/blogs/blog/:blogId",
+          path: "/blogs/blog",
           element: <SingleBlogPage setTitle={setTitle} />,
+          children: [
+            {
+              path: "/blogs/blog/:blogId",
+              element: <SingleBlog />
+            }
+          ]
         },
 
         {
@@ -167,7 +175,7 @@ const RouteHandle = () => {
 
 
 
-    
+
     , {
       path: "/test",
       element: <Test />

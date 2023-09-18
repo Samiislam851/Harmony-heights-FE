@@ -10,8 +10,8 @@ import { useParams } from "react-router-dom";
 
 const CheckoutForm = ({ cart, price,classid }) => {
     
-    const  { registerUser, user, logOut, loginUser,isLogged,setIsLogged }  = useContext(AuthContext);
-    const  { toastPush}  = useContext(AuthContext);
+    const  { registerUser, user, logOut, loginUser,isLogged,setIsLogged,toastPush }  = useContext(AuthContext);
+    // const  { toastPush}  = useContext(AuthContext);
     const stripe = useStripe();
     const elements = useElements();
     const [cardError, setCardError] = useState('');
@@ -79,6 +79,7 @@ const CheckoutForm = ({ cart, price,classid }) => {
         setProcessing(false)
         if (paymentIntent.status === 'succeeded') {
             setTransactionId(paymentIntent.id);
+            toastPush('Payment Successful')
             // save payment information to the server
             const payment = {
                 email: user?.email,

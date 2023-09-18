@@ -72,7 +72,7 @@ let data = renderData.filter(e=>e._id!=id)
  
          
              <>
- 
+   <h2 class="md:text-6xl text-center pb-5 font-semibold text-gray-600">Enrolled Classes</h2>
              <section className='flex flex-col items-center justify-center mt-8 space-y-8'>
   <div className="overflow-x-auto ">
   
@@ -116,16 +116,16 @@ let data = renderData.filter(e=>e._id!=id)
              </div>
            </div>
          </td>
-         <td>{e.result[0].instructorname}</td>
-         <td>{e.result[0].instructoremail}</td>
-         <td>{e.result[0].price}</td>
-         <td>
+         <td className="font-bold">{e.result[0].instructorname}</td>
+         <td className="font-bold">{e.result[0].instructoremail}</td>
+         <td className="font-bold">{e.result[0].price}</td>
+         <td className="font-bold">
           {e.result[0].availableseat}
           </td>
-          <td>
+          <td className="font-bold">
           {e.result[0].enrolledstudents}
           </td>
-          <td>
+          <td className="font-bold">
           {e.transactionId}
           </td>
           
@@ -145,14 +145,7 @@ let data = renderData.filter(e=>e._id!=id)
      {/* foot */}
      <tfoot>
      <tr>
-     <th>Class/Image</th>
-         <th>Instructor</th>
-         <th>Email</th>
-         <th>Price</th>
-         <th>Available Seat</th>
-         <th>Total Enrolled</th>
-         <th>Transactionid</th>
-       
+ 
        </tr>
      </tfoot>
      

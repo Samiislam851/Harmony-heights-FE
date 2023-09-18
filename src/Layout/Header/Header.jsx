@@ -173,7 +173,7 @@ const Header = () => {
               </>
               :
               <>
-                <img src={user.photoURL} className='rounded-full h-[50px] border border-1 shadow border-gray-300' title={user.displayName} alt="" />
+                <img src={user.photoURL} className='rounded-full h-[50px] border border-1 shadow border-gray-300' title={user?.displayName} alt="" />
                 <button onClick={logOut} className='ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-gray-500 bg-gray-400 bg-opacity-70 hover:bg-red-700'>Sign Out</button>
               </>}
             </div>
@@ -298,7 +298,7 @@ const Header = () => {
                     </>
                     :
                     <>
-                      <img src={user.photoURL} className='rounded-full mx-auto mb-2 h-[50px] border border-1 shadow border-gray-300' title={user.displayName} alt="" />
+                      <img src={user.photoURL} className='rounded-full mx-auto mb-2 h-[50px] border border-1 shadow border-gray-300' title={user?.displayName} alt="" />
                       <button onClick={logOut} className='ml-8 -ms-1 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-gray-500 bg-gray-400 bg-opacity-70 hover:bg-red-700'>Sign Out</button>
                     </>}
                   </div>

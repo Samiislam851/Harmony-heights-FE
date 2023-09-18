@@ -4,6 +4,7 @@ import axios from 'axios';
 import BlogsCard from '../BlogsCard/BlogsCard';
 import { Link } from 'react-router-dom';
 const ref = React.createRef();
+const component = true;
 const BlogsComponen = () => {
     const [loading, setLoading] = useState(true)
     const [blogData, setBlogData] = useState();
@@ -45,7 +46,7 @@ const BlogsComponen = () => {
                         </div>
                         <div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
                             {blogData.map((e, i) => {
-                                if (i < 3) return <BlogsCard data={e} />
+                                if (i < 3) return <BlogsCard data={e} component={component} />
                             }
                             )}
                         </div>

@@ -60,7 +60,7 @@ signInWithPopup(auth, githubAuthprovider)
             />
           </svg>
         </span>
-        <span>Sign In With Github</span>
+        <span className='text-gray-500'>Sign In With Github</span>
       </button>
         </>
     );

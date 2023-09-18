@@ -59,7 +59,7 @@ const LoginWithGoogle = () => {
             />
           </svg>
         </span>
-        <span>Sign In With Gogole</span>
+        <span className='text-gray-600'>Sign In With Google</span>
       </button>
         </>
     );

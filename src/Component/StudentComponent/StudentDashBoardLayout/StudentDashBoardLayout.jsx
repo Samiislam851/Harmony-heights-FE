@@ -39,7 +39,7 @@ theme="light"
                 </div>
                 <div className="px-6 py-6 text-white">
                   <Link
-                    to="/admin"
+                    to="/student"
                     className="router-link-exact-active router-link-active"
                   >
                   Dashboard
@@ -101,10 +101,10 @@ theme="light"
                         >
                           <span className="flex items-center">
                             <img
-                              src={`https://www.gravatar.com/avatar/9240e2357dc0b9a4cfd1b109c23af063?d=https%3A%2F%2Fui-avatars.com%2Fapi%2F${user.displayName}`}
+                              src={`https://www.gravatar.com/avatar/9240e2357dc0b9a4cfd1b109c23af063?d=https%3A%2F%2Fui-avatars.com%2Fapi%2F${user?.displayName}`}
                               className="h-8 w-8 rounded-full"
                             />
-                            <span className="ml-3">{user.displayName}</span>
+                            <span className="ml-3">{user?.displayName}</span>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 24 24"
