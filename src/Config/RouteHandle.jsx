@@ -40,7 +40,7 @@ import CurrentElections from '../Component/CurrentElections/CurrentElections';
 import BlogPage from '../Pages/BlogPage/BlogPage';
 import SingleBlogPage from '../Pages/SingleBlogPage/SingleBlogPage';
 import SingleBlog from '../Component/SingleBlog/SingleBlog';
-import Miraj from '../Pages/Miraj/Miraj';
+
 
 
 const RouteHandle = () => {
@@ -172,11 +172,7 @@ const RouteHandle = () => {
       ]
     },
 
-{
-  path : "/miraj",
-  element: <Miraj/>
-  
-}
+
 
 
 
